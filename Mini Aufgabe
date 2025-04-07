@@ -1,1 +1,8 @@
+def Bmirechner():
+    gew = float(input("Gib das Gewicht in Kilogramm ein:"))
+    gro = float(input("Gib deine Größe in Meter ein:"))
+    bmi = gew / (gro ** 2)
+    print(bmi)
+Bmirechner()
+
 

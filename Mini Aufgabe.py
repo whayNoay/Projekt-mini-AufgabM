@@ -9,12 +9,16 @@ def bmiRechner():
         bmi = gewicht / (groesse ** 2)
         bmi = bmi * 10000
         bmiverlauf.append(bmi)  
-        print(f"Dein BMI beträgt: {bmi:.2f}")
+        print(f"BMI:{bmi:.2f}")
+        
+    print("\nDeine BMI-Werte:")
+    for wert in bmiListe:
+        print(f" {wert:.2f}")
     
-    print("\nVergleich der BMI-Werte:")
-    for index, wert in enumerate(bmiverlauf):
-        print(f"BMI {index + 1}: {wert:.2f}({groesse}cm {gewicht}kg)")
-
+    
 
 bmiRechner()
+
+
+
 
